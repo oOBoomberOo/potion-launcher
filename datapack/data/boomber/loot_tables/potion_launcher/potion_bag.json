@@ -17,7 +17,11 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{ctc: {id: 'potion_bag', from: 'boomber:potion_launcher', traits: {}}}"
+							"tag": "{ctc: {id: 'potion_bag', from: 'boomber:potion_launcher', traits: {'boomber/hotbar_gui': 1b}}}"
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{boomber: {hotbar_gui: {}}}"
 						}
 					]
 				}
