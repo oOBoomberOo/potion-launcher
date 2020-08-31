@@ -1,0 +1,17 @@
+{
+    "display": {
+        "title": "Potion Launcher",
+        "description": "My amazing datapack",
+        "icon": {
+            "item": "minecraft:potion"
+        },
+        "announce_to_chat": false,
+        "show_toast": false
+    },
+    "parent": "global:boomber",
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:tick"
+        }
+    }
+}
