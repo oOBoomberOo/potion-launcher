@@ -12,6 +12,10 @@
 							"name": {"translate": "potion_launcher.item.potion_bag", "italic": false, "color": "yellow"}
 						},
 						{
+							"function": "minecraft:set_lore",
+							"lore": []
+						},
+						{
 							"function": "minecraft:set_nbt",
 							"tag": "{CustomModelData: 8080001, Unbreakable: 1b, HideFlags: 4}"
 						},

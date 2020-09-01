@@ -13,6 +13,7 @@ data modify storage boomber:potion_launcher item set from entity @s SelectedItem
 function boomber:potion_launcher/player/impl/get_filter_type
 	function boomber:potion_launcher/player/impl/copy_inventory
 	data modify storage boomber:potion_launcher target_item.tag.boomber.potion_launcher.inventory set from storage boomber:hotbar_gui/filter output
+	function boomber:potion_launcher/player/display/extra
 
 data modify storage boomber:hotbar_gui data set from storage boomber:potion_launcher item.tag.boomber.hotbar_gui.data
 data modify storage boomber:hotbar_gui target_item set from storage boomber:potion_launcher target_item
