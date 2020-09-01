@@ -1,5 +1,5 @@
-#> boomber:potion_launcher/player/impl/direction_vector
-# @api
+#> boomber:potion_launcher/item/potion_launcher/impl/direction_vector
+# @within boomber:potion_launcher/item/potion_launcher/impl/launch_potion/spawn
 
 data merge storage boomber:potion_launcher {vector: [0d, 0d, 0d]}
 
