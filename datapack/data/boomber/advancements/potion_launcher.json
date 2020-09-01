@@ -1,9 +1,10 @@
 {
     "display": {
         "title": "Potion Launcher",
-        "description": "My amazing datapack",
+        "description": "",
         "icon": {
-            "item": "minecraft:potion"
+            "item": "minecraft:carrot_on_a_stick",
+            "nbt": "{CustomModelData: 8080002}"
         },
         "announce_to_chat": false,
         "show_toast": false

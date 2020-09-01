@@ -2,6 +2,7 @@
 	"values": [
 		"boomber:hotbar_gui/setup",
 		"boomber:potion_launcher/setup",
+		"boomber:potion_launcher/main",
 		"boomber:potion_launcher/slow_update"
 	]
 }

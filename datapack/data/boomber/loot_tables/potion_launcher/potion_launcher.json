@@ -12,12 +12,22 @@
 							"name": {"translate": "potion_launcher.item.potion_launcher", "italic": false, "color": "yellow"}
 						},
 						{
+							"function": "minecraft:set_lore",
+							"lore": [
+								{"text": "Durability: 250/250", "color": "blue", "italic": false}
+							]
+						},
+						{
 							"function": "minecraft:set_nbt",
-							"tag": "{CustomModelData: 8080002}"
+							"tag": "{CustomModelData: 8080002, HideFlags: 32}"
 						},
 						{
 							"function": "minecraft:set_nbt",
 							"tag": "{ctc: {id: 'potion_launcher', from: 'boomber:potion_launcher', traits: {'boomber/hotbar_gui': 1b}}}"
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{ctc: {tool: {damage: 0, durability: 250, broken: false}}}"
 						},
 						{
 							"function": "minecraft:set_nbt",
