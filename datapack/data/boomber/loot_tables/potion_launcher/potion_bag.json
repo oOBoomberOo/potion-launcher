@@ -21,7 +21,11 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{boomber: {hotbar_gui: {}}}"
+							"tag": "{boomber: {hotbar_gui: {is_open: false, data: []}}}"
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{boomber: {potion_launcher: {inventory: []}}}"
 						}
 					]
 				}

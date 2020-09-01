@@ -9,9 +9,12 @@ data modify storage boomber:potion_launcher item set from entity @s Inventory[{S
 	data modify storage boomber:potion_launcher item.Slot set value 0b
 
 function boomber:hotbar_gui/serialize/run
+	data modify storage boomber:potion_launcher item.tag.boomber.hotbar_gui.is_open set from storage boomber:hotbar_gui is_open
 	data modify storage boomber:potion_launcher item.tag.boomber.hotbar_gui.data set from storage boomber:hotbar_gui data
 
 data modify storage boomber:hotbar_gui data set from storage boomber:potion_launcher item.tag.boomber.potion_launcher.inventory
 	function boomber:hotbar_gui/utils/into_inventory
 
-execute positioned ~ 255 ~ run function boomber:potion_launcher/player/impl/replace_offhand
+function boomber:potion_launcher/player/impl/replace_offhand
+
+function boomber:potion_launcher/player/transition/open

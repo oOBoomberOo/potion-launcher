@@ -1,4 +1,7 @@
-# TODO: Handle death state
+#> boomber:potion_launcher/player/main
+# @within boomber:potion_launcher/main
+
+# TODO: Implement item filtering
 
 execute unless score @s bb.pl.state = @s bb.pl.state run function boomber:potion_launcher/player/transition/idle
 
