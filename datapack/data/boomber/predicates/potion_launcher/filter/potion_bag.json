@@ -1,0 +1,11 @@
+{
+	"condition": "minecraft:entity_properties",
+	"entity": "this",
+	"predicate": {
+		"equipment": {
+			"mainhand": {
+				"nbt": "{ctc: {id: 'potion_bag', from: 'boomber:potion_launcher'}}"
+			}
+		}
+	}
+}
