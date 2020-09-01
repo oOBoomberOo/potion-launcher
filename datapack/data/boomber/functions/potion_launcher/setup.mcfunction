@@ -14,6 +14,17 @@ scoreboard objectives add bb.pl.state dummy
 scoreboard objectives add bb.pl.enum dummy
 
 #>
+# @within
+#   boomber:potion_launcher/item/potion_launcher/main
+#   boomber:potion_launcher/player/main
+scoreboard objectives add bb.pl.use minecraft.used:carrot_on_a_stick
+
+#>
+# @within
+#   boomber:potion_launcher/**
+scoreboard objectives add bb.pl.var dummy
+
+#>
 # Idle state
 # @within boomber:potion_launcher/**
 #declare score_holder #state.idle
@@ -60,3 +71,6 @@ scoreboard players set #filter.potion_launcher bb.pl.enum 2
 #>
 # @within boomber:potion_launcher/**
 #declare storage boomber:potion_launcher
+
+#alias vector world_center 0 0
+forceload add 0 0
