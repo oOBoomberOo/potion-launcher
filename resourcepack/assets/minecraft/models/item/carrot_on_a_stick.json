@@ -4,6 +4,7 @@
 		"layer0": "minecraft:item/carrot_on_a_stick"
 	},
 	"overrides": [
-		{"predicate": {"custom_model_data": 8080001}, "model": "boomber:potion_launcher/potion_bag"}
+		{"predicate": {"custom_model_data": 8080001}, "model": "boomber:potion_launcher/potion_bag"},
+		{"predicate": {"custom_model_data": 8080002}, "model": "boomber:potion_launcher/potion_launcher"}
 	]
 }

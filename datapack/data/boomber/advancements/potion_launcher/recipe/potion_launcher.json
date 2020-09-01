@@ -1,0 +1,13 @@
+{
+	"criteria": {
+		"crafted": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "boomber:potion_launcher/potion_launcher"
+			}
+		}
+	},
+	"rewards": {
+		"function": "boomber:potion_launcher/recipe/potion_launcher"
+	}
+}

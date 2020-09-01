@@ -1,0 +1,35 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:carrot_on_a_stick",
+					"functions": [
+						{
+							"function": "minecraft:set_name",
+							"name": {"translate": "potion_launcher.item.potion_launcher", "italic": false, "color": "yellow"}
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{CustomModelData: 8080002}"
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{ctc: {id: 'potion_launcher', from: 'boomber:potion_launcher', traits: {'boomber/hotbar_gui': 1b}}}"
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{boomber: {hotbar_gui: {is_open: false, data: []}}}"
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{boomber: {potion_launcher: {inventory: []}}}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
