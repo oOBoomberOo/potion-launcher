@@ -9,7 +9,7 @@ summon item ~ ~ ~ {Tags: ['boomber.potion_launcher.temp'], Item: {id: 'minecraft
 	data modify storage boomber:potion_launcher input set from storage boomber:potion_launcher target_item.tag.boomber.potion_launcher.inventory
 	data modify storage boomber:potion_launcher iter set value {}
 	data modify storage boomber:potion_launcher output set value []
-	execute as @e[tag=boomber.potion_launcher.temp] if data storage boomber:potion_launcher input[] run function boomber:potion_launcher/item/potion_bag/display/items
+	execute as @e[tag=boomber.potion_launcher.temp] if data storage boomber:potion_launcher input[] positioned ~ 255 ~ run function boomber:potion_launcher/item/potion_bag/display/items
 	kill @e[tag=boomber.potion_launcher.temp]
 
 data modify storage boomber:potion_launcher target_item.tag.display.Lore set from storage boomber:potion_launcher output

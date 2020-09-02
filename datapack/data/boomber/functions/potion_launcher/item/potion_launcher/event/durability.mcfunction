@@ -19,7 +19,7 @@ execute store result score #durability bb.pl.var run data get storage boomber:po
 #declare score_holder #damage
 execute store result score #damage bb.pl.var run data get storage boomber:potion_launcher item.tag.ctc.tool.damage
 execute store result storage boomber:potion_launcher item.tag.ctc.tool.damage int 1 run scoreboard players add #damage bb.pl.var 1
-	function boomber:potion_launcher/item/potion_launcher/display/durability
+	execute positioned ~ 255 ~ run function boomber:potion_launcher/item/potion_launcher/display/durability
 	function boomber:potion_launcher/item/potion_launcher/impl/sync_durability
 	execute positioned ~ 255 ~ run function boomber:potion_launcher/item/potion_launcher/impl/update_item
 	
