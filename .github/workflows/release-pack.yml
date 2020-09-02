@@ -1,0 +1,61 @@
+name: Release Datapack
+
+on:
+  push:
+    breaches:
+      - master
+    tags:
+      - v*
+
+jobs:
+  build:
+    name: Release Datapack
+    runs-on: ubuntu-latest
+    env:
+      REPO_NAME: ${{ github.event.repository_name }}
+      VERSION: ${{ github.ref }}
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Archive Datapack
+        uses: thedoctor0/zip-release@master
+        with:
+          filename: pack.zip
+          directory: datapack/
+      
+      - name: Archive Resourecepack
+        uses: thedoctor0/zip-release@master
+        with:
+          filename: pack.zip
+          directory: resourcepack/
+
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ env.VERSION }}
+          release_name: Release ${{ env.VERSION }}
+          draft: false
+          prerelease: false
+
+      - name: Upload Datapack
+        uses: action/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_pack: './datapack/pack.zip'
+          asset_name: ${{ env.REPO_NAME }}_datapack.zip
+          asset_content_type: application/zip
+
+      - name: Upload Resourcepack
+        uses: action/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_pack: './resourecepack/pack.zip'
+          asset_name: ${{ env.REPO_NAME }}_resourcepack.zip
+          asset_content_type: application/zip
