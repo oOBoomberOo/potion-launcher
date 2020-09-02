@@ -1,6 +1,6 @@
 {
     "pack": {
         "pack_format": 6,
-        "description": "My amazing datapack"
+        "description": {"text": "This is not a resourcepack file!", "color": "red"}
     }
 }

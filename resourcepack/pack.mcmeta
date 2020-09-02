@@ -1,6 +1,6 @@
 {
 	"pack": {
 		"pack_format": 6,
-		"description": "Potion Launcher Resourcepack"
+		"description": {"text": "Potion Launcher resourcepack ✓", "color": "green"}
 	}
 }
