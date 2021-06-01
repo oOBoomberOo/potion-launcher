@@ -1,0 +1,7 @@
+[datapack]
+base_dir = "datapack"
+includes = ["*"]
+
+[resourcepack]
+base_dir = "resourcepack"
+includes = ["*"]
